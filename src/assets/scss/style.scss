@@ -1,0 +1,10 @@
+/* 언어 셋팅: 모든 언어가 나올 수 있도록 */
+@charset "UTF-8";
+
+// setting: 파일 불러오는 순서 중요함
+@import "setting/fonts";
+@import "setting/vars";
+@import "setting/reset";
+@import "setting/mixin";
+@import "setting/common";
+

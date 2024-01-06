@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Website = () => {
+const Jsb = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Website = () => {
   )
 }
 
-export default Website
+export default Jsb

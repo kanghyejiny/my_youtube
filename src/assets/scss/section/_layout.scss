@@ -5,6 +5,7 @@
   top: 0;
   width: 260px;
   height: 100%;
+  overflow-y: auto;
   z-index: 10000; // 제일 위로
   background-color: #000;
 }

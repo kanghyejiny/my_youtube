@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Webd = () => {
+const Reactb = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Webd = () => {
   )
 }
 
-export default Webd
+export default Reactb

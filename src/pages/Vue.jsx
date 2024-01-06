@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Gsap = () => {
+const Vue = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Gsap = () => {
   )
 }
 
-export default Gsap
+export default Vue

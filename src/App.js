@@ -9,7 +9,6 @@ const Reactb = lazy(() => import('./pages/Reactb'));
 const Jsb = lazy(() => import('./pages/Jsb'));
 const Vue = lazy(() => import('./pages/Vue'));
 const Webserver = lazy(() => import('./pages/Webserver'));
-const Youtube = lazy(() => import('./pages/Youtube'));
 const Channel = lazy(() => import('./pages/Channel'));
 const Video = lazy(() => import('./pages/Video'));
 const Search = lazy(() => import('./pages/Search'));
@@ -27,7 +26,6 @@ const App = () => {
           <Route path='/jsb' element={<Jsb/>} />
           <Route path='/vue' element={<Vue/>} />
           <Route path='/webserver' element={<Webserver/>} />
-          <Route path='/youtube' element={<Youtube/>} />
           <Route path='/channel/:channelID' element={<Channel/>} />
           <Route path='/video/:videoID' element={<Video/>} />
           <Route path='/search/:searchID' element={<Search/>} />

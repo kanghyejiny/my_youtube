@@ -3,7 +3,7 @@ import Main from '../components/section/Main'
 
 const Webserver = () => {
   return (
-    <Main>
+    <Main title='웹서버' description='웹서버 강의입니다.'>
       
     </Main>
   )

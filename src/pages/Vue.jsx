@@ -3,8 +3,8 @@ import Main from '../components/section/Main'
 
 const Vue = () => {
   return (
-    <Main>
-      
+    <Main title='vue' description='vue 강의입니다.'>
+      Vue
     </Main>
   )
 }

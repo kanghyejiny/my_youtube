@@ -7,6 +7,9 @@
   overflow-y: auto;
   z-index: 10000;
   border-right: 1px solid $black1;
+  @include mobile {
+    left: -260px;
+  }
 }
 
 #main {
@@ -14,6 +17,9 @@
   min-height: 100vh;
   margin: 0 auto;
   padding-left: 260px;
+  @include mobile {
+    padding-left: 0;
+  }
 }
 
 #footer {
@@ -25,4 +31,8 @@
   color: $black3;
   font-size: .8rem;
   border-top: 1px solid $black1;
+  @include mobile {
+    width: 100%;
+    margin-left: 0;
+  }
 }

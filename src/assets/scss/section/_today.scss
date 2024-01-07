@@ -1,0 +1,78 @@
+.today {
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    background-color: $black1;
+    @include mini-web {
+      flex-direction: column;
+    }
+  }
+  &__thumb {
+    width: 40%;
+    @include web {
+      width: 500px;
+    }
+    @include mini-web {
+      width: 100%;
+    }
+  }
+  &__text {
+    width: 60%;
+    padding: 2rem;
+    @include web {
+      width: calc(100% - 500px);
+    }
+    @include mini-web {
+      width: 100%;
+      .title {
+        font-size: 24px;
+      }
+    }
+    .today {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 2px 50px;
+      background-color: $red;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+    .title {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      @include line-one
+    }
+    .desc {
+      margin-bottom: 1rem;
+      color: $whited9;
+      @include line(4);
+      @include web {
+        @include line(2);
+      };
+      @include mini-web {
+        display: none;
+      }
+    }
+    .info {
+      .author {
+        margin-right: 10px;
+        font-size: 1rem;
+        font-weight: 900;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-transform: uppercase;
+      }
+      .date {
+        font-size: .8rem;
+        color: $whited9;
+      }
+    }
+  }
+}
+
+#today, #todayPage {
+  @include mobile {
+    margin-top: 80px;
+  }
+}
+

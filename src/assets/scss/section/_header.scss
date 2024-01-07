@@ -20,6 +20,12 @@
         text-transform: uppercase;
       }
     }
+    @include mobile {
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-bottom: 0;
+    }
   }
   &__menu {
     margin-bottom: 4rem;
@@ -90,6 +96,9 @@
     padding: 15px 0 10px;
     background-color: $blackAlpha1;
     backdrop-filter: blur(10px);
+    @include mobile {
+      display: none;
+    }
     li {
       display: inline-block;
       a {

@@ -2,13 +2,23 @@ $black: #000;
 $black1: #111;
 $black2: #222;
 $black3: #333;
-$blackAlpha1: #11111125;
+$blackAlpha: #00000000;
+$blackAlpha1: #0000002d;
+$blackAlpha2: #0000004d;
+$blackAlpha4: #000000c3;
+$blackAlpha5: #000000eb;
 $white: #fff;
+$whited9: #d9d9d9;
 $d9: #d9d9d9;
 $red: #f00;
 
 $mainfont-nanum: "nanumSquareNeo";
 $mainfont-nexon: "nexonLv1";
+
+// 반응형기준
+$web: 1700px;
+$mini-web: 1200px;
+$mobile: 800px;
 
 :root {
   // 폰트 셋팅
@@ -24,7 +34,7 @@ $mainfont-nexon: "nexonLv1";
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  @media (max-width: 800px) {
+  @media (max-width: $mobile) {
       font-size: 14px;
       line-height: 1.4;
   }

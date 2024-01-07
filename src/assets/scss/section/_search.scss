@@ -5,6 +5,16 @@
     width: 100%;
     height: 80px;
     border-bottom: 1px solid $black1;
+    @include mobile {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      padding: 17px 20px 17px 200px;
+      background-color: $blackAlpha5;
+      backdrop-filter: blur(10px);
+    }
     label {
       width: 24px;
       height: 24px;
@@ -12,6 +22,9 @@
       position: absolute;
       left: 53px;
       top: 28px;
+      @include mobile {
+        left: 213px;
+      }
     }
     input {
       padding: 14px 45px;
@@ -21,6 +34,9 @@
       border-radius: 40px;
       font-size: 1rem;
       color: $white;
+      @include mobile {
+        padding: 14px 14px 14px 45px;
+      }
     }
   }
 }

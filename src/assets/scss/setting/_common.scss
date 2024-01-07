@@ -2,3 +2,54 @@ body {
   background-color: $black;
   color: $white;
 }
+
+// section 공통 요소
+section {
+  padding: 40px;
+  @include mobile {
+    padding: 20px;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+// mouse hover icon
+.play__icon {
+  a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: $blackAlpha2;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: background-color .3s;
+    }
+    &:hover::before {
+      background-color: $blackAlpha1;
+    }
+    &::after {
+      content: '';
+      width: 80px;
+      height: 80px;
+      background: $blackAlpha4 url(../../img/icon/play.svg) no-repeat center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}

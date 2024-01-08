@@ -1,0 +1,41 @@
+.developer {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    &.overflow {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    .developer {
+      margin-right: 20px;
+      @include mini-web {
+        margin-left: 0;
+      }
+    }
+    @include mini-web {
+      justify-content: center;
+    }
+    @include mobile {
+      margin-top: 70px;
+    }
+  }
+  &__img {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    @include mini-web {
+      margin: 10px auto;
+      width: 130px;
+      height: 130px;
+    }
+  }
+  &__info {
+    padding-bottom: 40px;
+    width: 150px;
+    text-align: center;
+    @include line-one;
+  }
+}

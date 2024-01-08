@@ -14,6 +14,11 @@
     @content; 
   }
 }
+@mixin mini-mobile {
+  @media (max-width:$mini-mobile) {
+    @content; 
+  }
+}
 
 // 텍스트 한줄 효과
 @mixin line-one {

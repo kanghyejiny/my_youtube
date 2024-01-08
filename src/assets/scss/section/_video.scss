@@ -1,0 +1,22 @@
+.video {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+    @include mini-web {
+      grid-template-columns: repeat(3, 32%);
+      gap: 15px;
+    }
+    @include mobile {
+      grid-template-columns: repeat(2, 49%);
+      gap: 10px;
+    }
+    @include mini-mobile {
+      grid-template-columns: repeat(1, 100%);
+      gap: 10px;
+    }
+    .video {
+      margin-bottom: 20px;
+    }
+  }
+}

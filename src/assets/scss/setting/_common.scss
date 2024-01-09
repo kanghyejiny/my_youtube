@@ -53,3 +53,15 @@ section {
     }
   }
 }
+
+// section loading
+.is {
+  &Loading {
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  &Loaded {
+    opacity: 1;
+    transition: opacity .5s;
+  }
+}

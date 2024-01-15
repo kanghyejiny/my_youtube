@@ -1,30 +1,39 @@
-import React from 'react'
-import { todayText } from '../../data/today'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Today = () => {
+const Today = ({ videos, id }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);      
+    }, 300);
+  }, []);
+
+  const todayClass = loading ? 'isLoading' : 'isLoaded';
+
   return (
     <div>
-      <section id='today'>
+      <section id={id} className={todayClass}>
         <div className='today__inner'>
           <div className="today__thumb play__icon" >
-            <Link to={todayText[5].page}>
-            <img src={todayText[5].img} alt={todayText.title} />
+            <Link to={videos[5].page}>
+            <img src={videos[5].img} alt={videos[5].title} />
             </Link>
           </div>
           <div className="today__text">
             <span className='today'>today!</span>
             <h3 className='title'>
-              <Link to={todayText[5].page}>{todayText[5].title}</Link>
+              <Link to={videos[5].page}>{videos[5].title}</Link>
             </h3>
-            <p className='desc'>{todayText[5].desc}</p>
+            <p className='desc'>{videos[5].desc}</p>
             <div className='info'>
               <span className='author'>
-                <Link to={`/channel/${todayText[5].channelId}`}>
-                  {todayText[5].author}
+                <Link to={`/channel/${videos[5].channelId}`}>
+                  {videos[5].author}
                 </Link>
               </span>
-              <span className='date'>{todayText[5].date}</span>
+              <span className='date'>{videos[5].date}</span>
             </div>
           </div>
         </div>

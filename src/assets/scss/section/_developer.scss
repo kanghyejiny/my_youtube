@@ -8,7 +8,6 @@
       overflow: hidden;
     }
     .developer {
-      margin-right: 20px;
       @include mini-web {
         margin-left: 0;
       }
@@ -22,8 +21,6 @@
   }
   &__img {
     margin-bottom: 10px;
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     @include mini-web {
@@ -33,9 +30,37 @@
     }
   }
   &__info {
-    padding-bottom: 40px;
-    width: 150px;
     text-align: center;
     @include line-one;
+  }
+}
+
+#developerPage {
+  .developer__inner {
+    .developer {
+      margin-right: 20px;
+      @include mini-web {
+        margin-right: 0;
+      }
+    }
+    .developer__img {
+      width: 150px;
+      height: 150px;
+      @include mini-web {
+        width: 130px;
+        height: 130px;
+        margin: 10px auto;
+      }
+    }
+    .developer__info {
+      width: 150px;
+      padding-bottom: 40px;
+    }
+    @include mini-web {
+      justify-content: center;
+    }
+    @include mobile {
+      margin-top: 70px;
+    }
   }
 }

@@ -22,4 +22,4 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
 - react-player를 설치 ➡ `npm install react-player`
 - sass를 설치 ➡ `npm install sass`
 - react-helmet-async를 설치 ➡ `npm install react-helmet-async`
-- swiper를 설치합니다. `npm install swiper`
+- swiper를 설치 ➡ `npm install swiper`

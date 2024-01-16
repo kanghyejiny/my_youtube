@@ -19,7 +19,7 @@ export const reactbText=[
     title: 'React 기초 1강 : 리액트 설치와 셋팅법 (2022+ 스타일)',
     img: reactb02,
     author: 'codingapple',
-    videoId:'LclObYwGj90',
+    videoId:'nahwuaXmgt8&t=3s',
     date: '2020.06.28',
     channelId: 'UCSLrpBAzr-ROVGHQ5EmxnUg',
   },

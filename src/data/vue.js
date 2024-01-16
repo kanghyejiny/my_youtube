@@ -11,7 +11,7 @@ export const vueText=[
     title: 'Vue 0강 : 카카오가 리액트냅두고 Vue 쓰는 이유',
     img: vue01,
     author: 'codingapple',
-    videoId:'tVaahsXpwk',
+    videoId:'-tVaahsXpwk&t=1s',
     date: '2021.03.20',
     channelId: 'UCSLrpBAzr-ROVGHQ5EmxnUg',
   },

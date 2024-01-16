@@ -8,7 +8,6 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
 ## 사용스택
 - node.js를 설치하고 사용합니다. 
 - react를 사용하여 사이트를 완성합니다. 
-- youTube Api를 이용하여 데이터를 가져옵니다.
 - rapidapi를 이용하여 데이터를 가져옵니다.
 - netlify를 통해 사이트를 배포합니다.
 - firebase를 통해 사이트를 배포합니다.

@@ -85,6 +85,9 @@
         }
       }
     }
+    @include mobile {
+      margin-top: 90px;
+    }
   }
   &__sns {
     width: 260px;

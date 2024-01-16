@@ -7,8 +7,8 @@ import { fetchFromAPI } from '../utils/api'
 
 const Search = () => {
   const { searchId } = useParams();
-  const [ videos, setVideos ] = useState([]);
-  const [ nextPageToken, setNextPageToken ] = useState(null);
+  const [videos, setVideos] = useState([]);
+  const [nextPageToken, setNextPageToken] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,20 +18,20 @@ const Search = () => {
   }, [searchId]);
 
   const fetchVideos = (query, pageToken = '') => {
-    fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
-    .then((data) => {
-      setNextPageToken(data.nextPageToken);
-      setVideos((prevVideos) => [...prevVideos, ...data.items]);
-      setLoading(false);
-    })
-    .catch((error) => {
-      console.error('Error fetching data:', error);
-      setLoading(false);
-    });
+    fetchFromAPI(`search?part=snippet&type=video&q=${query}&pageToken=${pageToken}`)
+      .then((data) => {
+        setNextPageToken(data.nextPageToken);
+        setVideos((prevVideos) => [...prevVideos, ...data.items]);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setLoading(false);
+      });
   };
 
   const handleLoadMore = () => {
-    if(nextPageToken) {
+    if (nextPageToken) {
       fetchVideos(searchId, nextPageToken);
     }
   };

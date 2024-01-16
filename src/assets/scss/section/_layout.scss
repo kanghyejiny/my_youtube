@@ -9,6 +9,16 @@
   border-right: 1px solid $black1;
   @include mobile {
     left: -260px;
+    background-color: $black;
+    transition: left .3s;
+    h1 {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    &.active {
+      left: 0;
+    }
   }
 }
 

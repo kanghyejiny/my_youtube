@@ -8,6 +8,7 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
 ![youtube_preview](https://github.com/kanghyejiny/my_youtube/assets/112097855/9e69f84a-ac84-4721-8a11-399e16db6085)
 
 ## 🛠 사용 기술 및 라이브러리
+<p>
  <img src="https://img.shields.io/badge/nodedotjs-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
  <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=react&logoColor=white">
@@ -17,6 +18,7 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
  <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=rapid&logoColor=white">
  <img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+</p>
 
 ## 💡 주요 기능
 

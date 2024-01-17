@@ -9,6 +9,11 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
 
 ## 🛠 사용 기술 및 라이브러리
 - node.js를 설치하고 사용
+- <img src="https://img.shields.io/badge/nodedotjs-#339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+
+<img src="https://img.shields.io/badge/nodedotjs-#339933?style=flat-square&logo=nodedotjs&logoColor=white">
+
+
 - react를 사용하여 사이트를 완성
 - youTube Api를 이용하여 데이터를 가져옴
 - rapidapi를 이용하여 데이터를 가져옴

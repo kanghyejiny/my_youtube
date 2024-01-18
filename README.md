@@ -1,6 +1,6 @@
 # 코딩 유튜브 사이트 제작
 
-React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트를 제작합니다. React의 기본 개념을 이해하고, 컴포넌트를 구조화하고 상태를 관리하는 방법을 학습하며, YouTube Data API를 활용하여 외부 데이터를 가져오는 방법을 익히고, API 응답을 처리하여 사용자에게 의미 있는 정보를 제공하는 방법을 이해합니다.
+
 
 ## 🖥 완성작 보기
 미리보기 : https://codingyoutube.netlify.app/
@@ -13,7 +13,7 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
  <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=react&logoColor=white">
  <img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=react&logoColor=white">
- <img src="https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"> API
+ <img src="https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
  <img src="https://img.shields.io/badge/rapid-0055DA?style=for-the-badge&logo=rapid&logoColor=white">
  <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=rapid&logoColor=white">
  <img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
@@ -21,6 +21,21 @@ React 프레임워크와 YouTube API를 이용하여 간단한 영상 사이트�
 </p>
 
 ## 💡 주요 기능
+✳ 추천 영상
+메인 페이지와  메뉴의 추천 영상에서 오늘의 유튜브 영상을 추천해줘요! 영상을 클릭하면  영상을 볼 수 있어요.
+
+✳ 추천 개발자
+메인 페이지와 메뉴의 추천 개발자에서 코딩 유튜버들을 소개해줘요! 채널을 클릭하면 채널 프로필 사진과 설명, 업로드 된 영상들을 볼 수 있어요. 
+
+✳ React / JavaScript / Vue / 웹서버 개발
+메인 페이지와 메뉴에서 유튜브 재생 목록을 볼 수 있어요! 영상을 클릭하면 영상이 바로 재생되요.
+
+✳ 검색 / 필터링
+- 더 많은 유튜브 영상을 보고싶다면 검색창에 검색어를 입력해보세요! 다양한 유튜브 영상들을 볼 수 있어요. 
+- 메뉴의 키워드를 눌러보세요! 검색 결과가 필터링되어 나타나게 되요.  
+
+✳ 유튜브 영상
+영상 재생 공간에서 영상과 관련된 정보들을 볼 수 있어요! 조회수, 좋아요, 댓글수도 보여지게 돼요. 
 
 ## 프로젝트 실행
 - **react를 설치** ➡  `npx create-react-app my_youtube`

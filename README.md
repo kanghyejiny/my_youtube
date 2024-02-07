@@ -42,6 +42,23 @@
 - 영상 재생 공간에서 영상과 관련된 정보들을 볼 수 있어요! 조회수, 좋아요, 댓글수도 보여지게 돼요. 
 <br/><br/><br/>
 
+## 🔥 Troubleshooting
+#### Issue1  
+- 다른 페이지로 전환시 웹사이트가 제일 상단 영역부터 보여야 하는데 중간 영역부터 보여지는 문제가 발생함
+
+React 애플리케이션에서 라우팅 변경 시 페이지가 맨 위로 스크롤되도록 하는 React 컴포넌트 scrollTo를  만들어 Main.jsx 에 scrollTo 컴포넌트 추가해주기
+React Router를 사용하여, 페이지 경로가 변경될 때마다 useEffect를 사용하여 스크롤 위치를 맨 위로 이동시킨다.
+                            
+                            
+                                import 문 : 코드 상단에 React의 useEffect와 useLocation 훅을, 그리고 React Router의 useLocation 훅을 가져옵니다.
+                                ScrollTo 컴포넌트 : 함수형 컴포넌트로 선언되며, 페이지 내의 다른 곳에서 이 컴포넌트를 사용할 수 있습니다.
+                                useLocation 훅을 사용하여 현재 페이지의 경로를 가져옵니다. 이 pathname 변수는 현재 페이지의 경로를 나타냅니다.
+                                useEffect 훅 : 페이지의 컴포넌트가 렌더링될 때마다 실행되는 부수 효과 함수를 정의합니다. 이 부수 효과 함수는 pathname이 변경될 때마다 실행됩니다.
+                                window.scrollTo(0, 0) : useEffect 함수 내에서, window.scrollTo 함수를 호출하여 페이지의 스크롤 위치를 (0, 0)으로 이동시킵니다. 이렇게 하면 페이지의 맨 위로 스크롤이 이동합니다.
+                                [pathname] 의존성 배열 : useEffect 함수가 pathname의 변경을 감지하고 그 때에만 실행되도록 하기 위해 의존성 배열에 pathname을 포함시킵니다.
+                                return null; : 이 컴포넌트는 화면에 렌더링되는 것이 아니라 스크롤을 조작하는 용도로만 사용됩니다. 따라서 렌더링되는 내용이 없으므로 null을 반환합니다.
+
+
 
 ## 프로젝트 실행
 - **react를 설치** ➡  `npx create-react-app my_youtube`

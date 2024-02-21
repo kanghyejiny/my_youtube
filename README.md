@@ -1,13 +1,12 @@
 # 코딩 유튜브 사이트
+React 프레임워크와 Youtube API를 이용한 코딩 유튜브 사이트
 <br/><br/><br/>
-
 
 ## 🖥 완성작 보기
 🟥 [Codingtube](https://codingyoutube.netlify.app/)
 
 ![youtube_preview](https://github.com/kanghyejiny/my_youtube/assets/112097855/9e69f84a-ac84-4721-8a11-399e16db6085)
 <br/><br/><br/>
-
 
 ## 🛠 사용 기술 및 라이브러리
 <p>
@@ -22,7 +21,6 @@
  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </p>
 <br/><br/><br/>
-
 
 ## 💡 주요 기능
 #### ✳ 추천 영상
@@ -57,11 +55,12 @@
 Search를 통해 유튜브 영상을 카드 형식으로 보면 채널 소개가 나오면서 비디오 페이지가 없는 undefined 주소가 나오게 되고, 그러면 없는 페이지로 이동하게 되는 문제가 발생했다. 
 
 **원인**
-데이터를 불러올 때 채널 페이지를 불러오게 했다는 사실을 알게 되었다.
+- 데이터를 불러올 때 채널 페이지를 불러오게 했다는 사실을 알게 되었다.
 
 **해결**
 - 데이터를 불러올 때 채널 페이지를 불러오지 않게 하면 된다.
 - Search.jsx 페이지에서 데이터를 불러올 때 type=video를 추가해서 해결했다.
+<br/><br/><br/>
 
 ## 프로젝트 실행
 - **react를 설치** ➡  `npx create-react-app my_youtube`

@@ -43,22 +43,25 @@
 <br/><br/><br/>
 
 ## 🔥 Troubleshooting
-#### Issue1  
-- 다른 페이지로 전환시 웹사이트가 제일 상단 영역부터 보여야 하는데 중간 영역부터 보여지는 문제가 발생함
+### ⚠ Issue1
+다른 페이지로 전환시 웹사이트가 제일 상단 영역부터 보여야 하는데 중간 영역부터 보여지는 문제가 발생했다.
 
-React 애플리케이션에서 라우팅 변경 시 페이지가 맨 위로 스크롤되도록 하는 React 컴포넌트 scrollTo를  만들어 Main.jsx 에 scrollTo 컴포넌트 추가해주기
-React Router를 사용하여, 페이지 경로가 변경될 때마다 useEffect를 사용하여 스크롤 위치를 맨 위로 이동시킨다.
-                            
-                            
-                                import 문 : 코드 상단에 React의 useEffect와 useLocation 훅을, 그리고 React Router의 useLocation 훅을 가져옵니다.
-                                ScrollTo 컴포넌트 : 함수형 컴포넌트로 선언되며, 페이지 내의 다른 곳에서 이 컴포넌트를 사용할 수 있습니다.
-                                useLocation 훅을 사용하여 현재 페이지의 경로를 가져옵니다. 이 pathname 변수는 현재 페이지의 경로를 나타냅니다.
-                                useEffect 훅 : 페이지의 컴포넌트가 렌더링될 때마다 실행되는 부수 효과 함수를 정의합니다. 이 부수 효과 함수는 pathname이 변경될 때마다 실행됩니다.
-                                window.scrollTo(0, 0) : useEffect 함수 내에서, window.scrollTo 함수를 호출하여 페이지의 스크롤 위치를 (0, 0)으로 이동시킵니다. 이렇게 하면 페이지의 맨 위로 스크롤이 이동합니다.
-                                [pathname] 의존성 배열 : useEffect 함수가 pathname의 변경을 감지하고 그 때에만 실행되도록 하기 위해 의존성 배열에 pathname을 포함시킵니다.
-                                return null; : 이 컴포넌트는 화면에 렌더링되는 것이 아니라 스크롤을 조작하는 용도로만 사용됩니다. 따라서 렌더링되는 내용이 없으므로 null을 반환합니다.
+**원인**
+- React 애플리케이션에서 라우팅 변경 시 페이지가 맨 위로 스크롤되도록 하는 React 컴포넌트를 구현하지 않았다는 사실을 알게 되었다.
 
+**해결**
+- React 애플리케이션에서 라우팅 변경 시 페이지가 맨 위로 스크롤되도록 하는 React 컴포넌트 scrollTo를 만들어 Main.jsx에 scrollTo 컴포넌트 추가해주기
+- React Router를 사용하여, 페이지 경로가 변경될 때마다 useEffect를 사용하여 스크롤 위치를 맨 위로 이동시킨다.
 
+### ⚠ Issue2
+Search를 통해 유튜브 영상을 카드 형식으로 보면 채널 소개가 나오면서 비디오 페이지가 없는 undefined 주소가 나오게 되고, 그러면 없는 페이지로 이동하게 되는 문제가 발생했다. 
+
+**원인**
+데이터를 불러올 때 채널 페이지를 불러오게 했다는 사실을 알게 되었다.
+
+**해결**
+- 데이터를 불러올 때 채널 페이지를 불러오지 않게 하면 된다.
+- Search.jsx 페이지에서 데이터를 불러올 때 type=video를 추가해서 해결했다.
 
 ## 프로젝트 실행
 - **react를 설치** ➡  `npx create-react-app my_youtube`
